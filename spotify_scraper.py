@@ -3,6 +3,9 @@ import json
 import requests
 import pandas as pd
 import time
+
+from pandas import read_csv
+
 from keys import SPOTIFY_KEYS
 
 # Spotify API credentials (you should probably use env variables but i am lazy)
@@ -118,7 +121,7 @@ def get_artist_popularity_scores(in_df):
             print(f"  Error fetching popularity for [{album_name}] ({artist_name}): {e}")
             popularity_scores.append(None)  # Append None if there's an error
 
-    out_df['popularity_score'] = popularity_scores
+    out_df['artist_popularity'] = popularity_scores
     return out_df
 
 
@@ -128,6 +131,6 @@ df = pd.read_csv(path + '/aoty.csv')
 
 df_with_popularity = get_artist_popularity_scores(df)
 
-print(df_with_popularity[['artist', 'popularity_score']].head())
+print(df_with_popularity[['artist', 'artist_popularity']].head())
 
 df_with_popularity.to_csv("aoty_with_popularity.csv", index=False)

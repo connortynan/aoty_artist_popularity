@@ -1,4 +1,4 @@
-id,title,artist,release_date,genres,user_score,rating_count,album_link,popularity_score
+id,title,artist,release_date,genres,user_score,rating_count,album_link,artist_popularity
 1,To Pimp a Butterfly,Kendrick Lamar,"March 15, 2015","Conscious Hip Hop, Jazz Rap, West Coast Hip Hop",95,"28,594 ratings",https://www.albumoftheyear.org/album/29250-kendrick-lamar-to-pimp-a-butterfly.php,97.0
 2,"good kid, m.A.A.d city",Kendrick Lamar,"October 22, 2012","Conscious Hip Hop, West Coast Hip Hop",94,"22,283 ratings",https://www.albumoftheyear.org/album/3840-kendrick-lamar-good-kid-maad-city.php,97.0
 3,In Rainbows,Radiohead,"October 10, 2007","Art Rock, Alternative Rock",94,"19,366 ratings",https://www.albumoftheyear.org/album/363-radiohead-in-rainbows.php,85.0
